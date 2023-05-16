@@ -1,0 +1,169 @@
+.top_anime_container {
+  margin-top: 1.5rem;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  height: fit-content;
+  
+}
+.times {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0.5rem 1.1rem;
+  
+}
+.times h1 {
+  font-size: 1.3rem;
+}
+.times_btns {
+  margin-left: auto;
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.times_anime_top_inactive {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  color: #666;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.top_anime {
+  margin-top: 0.8rem;
+  
+}
+.times_anime_top_active {
+  color: white;
+}
+.top_anime_list {
+  height: fit-content;
+  width: 100%;
+
+}
+.top_anime {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+.top_anime::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg,rgba(0,0,0,0) 0,#000 100%); /*make the image get black shade a bottom */
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 150px;
+}
+.top_anime img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.top_number,
+.top_title,
+.top_views {
+  position: absolute;
+  z-index: 2;
+}
+.top_number {
+  color: black;
+  font-size: 1.5rem;
+  left: 0;
+  bottom: 0;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+.top_title {
+  left: 24%;
+  bottom: 22%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden ;
+  text-overflow: ellipsis;
+}
+.top_views{
+  left: 24%;
+  bottom: 8%;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: bold;
+}
+.top_views i{
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: bold;
+}
+.other_place{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.1rem;
+ 
+}
+.other_number{
+  align-self: center;
+}
+.other_place img{
+  height: 70px;
+  width: 60px;
+  border-radius: 4px;
+}
+.other_number{
+width: 40px;
+height: 40px;
+padding: 1.4rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: 400;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.other_number:hover{
+  color: white;
+}
+.other_title_views{
+  
+  width: 60ch;
+  white-space: nowrap;
+  overflow: hidden ;
+  text-overflow: ellipsis;
+}
+.other_views{
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 400;
+  
+}
+
+.other_views i{
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 400;
+  margin-right: 0.2rem;
+}
+.other_place:last-child{
+  margin-bottom: 1rem;
+}
